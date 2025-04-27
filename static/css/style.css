@@ -1,0 +1,23 @@
+/* style.css */
+#hello{
+    background-color: #4457ff4e;
+    text-align: center;
+    
+}
+body {
+    text-align: center;
+    font: italic small-caps bold 12px/30px Georgia, serif;
+    background-color: #77c3cfbe;
+    padding: 20px;
+   
+}
+
+#feed {
+    margin-right: 150px;
+    margin-left: 150px;
+    border-style: dotted;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 40x;
+}
+
