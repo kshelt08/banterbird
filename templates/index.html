@@ -7,7 +7,7 @@
 </head>
 <header> <div class="header">
     <div class="header-right" id = "hello" >
-        Logged in as: <strong id="username">admin</strong>
+        Logged in as: <strong id="username">anonymous</strong>
     <h1>Banterbird</h1> <a href="#home" id="hello">Home</a>  <a href="#profile"id="hello">Profile</a>
     </div>
   </div></header>
@@ -28,5 +28,8 @@
             <hr>
         </div>
     </template>
+    <script>
+        document.getElementById("username").innerText = localStorage.getItem("username");
+    </script>
 </body>
 </html>
