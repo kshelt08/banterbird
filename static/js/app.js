@@ -44,3 +44,14 @@ async function submitPost() {
       console.error("Error fetching posts:", error);
     }
   };
+
+  setInterval(async()= async () => {
+    try {
+      const response = await fetch("/api/posts");
+      const posts = await response.json();
+      document.getElementById("feed").innerHTML = "";
+      posts.forEach((post) => renderPost(post));
+    } catch (error) {
+      console.error("Pulling Failed with error:", error);
+    }
+  }, 5000);
